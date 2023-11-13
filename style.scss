@@ -12,6 +12,7 @@ body{
 
 .card img {
     object-fit: cover;
+    height: 75%;
 }
 
 .card-title {
@@ -25,6 +26,7 @@ header{
     justify-content: space-around;
     align-items:center;
     height: 63px;
+    box-shadow: 5px 5px 5px #aaa;
 }
 
 .localisation{
@@ -43,6 +45,7 @@ header{
     flex-direction: column;
     padding: 30px;
     align-items: center;
+    text-align: center;
 }
 
 .titre h2{
@@ -51,12 +54,13 @@ header{
 }
 
 .titre button{
-    background: #ba78bb;
+    background: linear-gradient(#9356dc,#ff78da);
     border-radius: 25px;
     width: 58%;
     height: 50px;
     border: 0px;
     color: white;
+    box-shadow: 8px 8px 12px #aaa;
     
 }
 
@@ -112,6 +116,7 @@ header{
 
 .restaurants1 a{
     width: 100%;
+    text-decoration: none;
 }
 
 .restaurants1 .card{
@@ -124,6 +129,8 @@ header{
     gap: 10px;
     font-size: 16px;
     padding-left: 10px;
+    padding-top: 5px;
+    align-items: center;
 }
 
 .card-txt div{
@@ -152,8 +159,14 @@ header{
 .like{
     border: 0px;
     background-color: white;
+    height: 22px;
+    width: 21px;
+    padding: 0px;
 }
 
+.like img{
+    height: 100%;
+}
 
 
 /**Footer**/
@@ -170,7 +183,7 @@ footer p{
     margin: 5px;
 }
 
-footer h3{
+footer img{
     color: #ffff;
 }
 
