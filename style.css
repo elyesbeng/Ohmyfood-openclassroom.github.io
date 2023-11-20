@@ -34,7 +34,7 @@ header {
 }
 
 h1 {
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand', serif;
 }
 
 .localisation {
@@ -44,6 +44,7 @@ h1 {
   background-color: #EAEAEA;
   font-weight: 500;
   height: 50px;
+  gap: 17px;
 }
 
 .titre {
@@ -69,6 +70,12 @@ h1 {
   border: 0px;
   color: white;
   box-shadow: 8px 8px 12px #aaa;
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+.titre button :hover {
+  transform: scale(1.15);
 }
 
 .accueil {
@@ -126,6 +133,21 @@ h1 {
   align-items: center;
   gap: 18px;
   width: 100%;
+}
+
+.badge-nouveau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 23%;
+  height: 12%;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
 }
 
 .restaurants1 a {
@@ -195,4 +217,10 @@ footer p {
 
 footer img {
   color: #ffff;
+}
+
+.contact {
+  text-decoration: none;
+  color: white;
+  margin: 5px;
 }
