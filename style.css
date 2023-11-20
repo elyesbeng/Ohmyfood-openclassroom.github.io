@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("/font/Shrikhand.ttf") format("truetype");
+}
+
 body {
   margin: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -25,6 +30,11 @@ header {
   align-items: center;
   height: 63px;
   box-shadow: 5px 5px 5px #aaa;
+  font-family: "Shrikhand";
+}
+
+h1 {
+  font-family: "Shrikhand";
 }
 
 .localisation {
@@ -68,7 +78,7 @@ header {
   flex-direction: column;
 }
 
-.accueil div {
+.guide-d-etapes {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -85,6 +95,20 @@ header {
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
+  position: relative;
+}
+
+.numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: -10px;
 }
 
 /***Restaurants***/

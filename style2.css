@@ -1,7 +1,8 @@
 header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 25%;
+  padding: 14px 89px 13px 17px;
 }
 
 .image-de-fond img {
@@ -11,6 +12,16 @@ header {
 body {
   margin: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.like {
+  width: 21px;
+}
+
+.titre {
+  font-family: "Shrikhand";
+  display: flex;
+  justify-content: space-between;
 }
 
 /***MENU***/
@@ -40,7 +51,10 @@ a {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
   padding: 15px;
+  gap: 5px;
 }
 
 .description-commande h3 {
@@ -55,6 +69,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 12px;
 }
 
 .prix-et-validation {
@@ -65,4 +80,39 @@ a {
 .prix-et-validation p {
   padding-bottom: 15px;
   padding-right: 15px;
+}
+
+.bouton-selection {
+  height: 100%;
+}
+
+.bouton-selection img {
+  height: 100%;
+}
+
+.bouton-commande {
+  background: linear-gradient(#9356dc, #ff78da);
+  border-radius: 25px;
+  width: 58%;
+  height: 50px;
+  border: 0px;
+  color: white;
+  margin-bottom: 45px;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  padding: 22px;
+  background-color: #353535;
+  color: white;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 5px;
 }
