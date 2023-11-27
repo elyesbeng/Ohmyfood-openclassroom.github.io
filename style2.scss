@@ -1,12 +1,20 @@
+@font-face {
+    font-family:"Shrikhand" ;
+    src: url("font/Shrikhand.ttf") format("truetype");
+}
+
 header{
     display: flex;
     align-items:flex-start;
     gap: 25%;
     padding: 14px 89px 13px 17px;
+    font-family: 'Shrikhand' ,sans-serif;
+    
 }
 
 .image-de-fond img{
     width: 100%;
+    position: relative;
 }
 
 body{
@@ -15,14 +23,19 @@ body{
 }
 
 .like{
-    width: 21px;
+    
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
 
 }
 
 .titre{
-    font-family: "Shrikhand";
+    font-family: 'Shrikhand' ,sans-serif;
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+    font-size: 20px;
+    padding-left: 15px;
 }
 
 
@@ -34,6 +47,10 @@ body{
     background-color: #f6f6f6;
     gap: 40px;
     padding-left: 15px;
+    margin-top: -40px;
+    position: relative;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
 }
 
 a{
@@ -51,6 +68,18 @@ a{
     width: 100%;
     border-radius: 20px;
     background-color: #ffffff;
+    box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+    transition: visibility;
+    transition-duration: 200ms;
+    
+}
+
+.description-commande :active{
+    .prix-et-validation{
+        .bouton-selection{
+            transition: visibility(visible);
+        }
+    }
 }
 
 .description{
@@ -92,6 +121,7 @@ a{
 
 .bouton-selection img{
     height: 100%;
+    display: none;
 }
 
 .bouton-commande{
@@ -102,7 +132,16 @@ a{
     border: 0px;
     color: white;
     margin-bottom: 45px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition-property: opacity , box-shadow;
+    transition-duration: 500ms;
 }
+
+.bouton-commande{
+    opacity: 0.85;
+    box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.35); 
+}
+
 
 .commander{
     display: flex;
@@ -114,9 +153,20 @@ footer {
     background-color: #353535;
     color: white;
     gap: 16px;
-    margin-top: 30px;
+}
+
+footer h3{
+    font-family: 'Shrikhand' ,sans-serif;
 }
 
 footer p{
     margin: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
+
+footer a{
+    color: white;
+}
+

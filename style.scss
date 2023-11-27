@@ -1,6 +1,6 @@
 @font-face {
     font-family:"Shrikhand" ;
-    src: url("/font/Shrikhand.ttf") format("truetype");
+    src: url("font/Shrikhand.ttf") format("truetype");
 }
 
 body{
@@ -36,7 +36,7 @@ header{
 }
 
 h1{
-    font-family: 'Shrikhand', serif;
+    font-family: 'Shrikhand' ,sans-serif;
 }
 
 .localisation{
@@ -71,13 +71,15 @@ h1{
     height: 50px;
     border: 0px;
     color: white;
-    box-shadow: 8px 8px 12px #aaa;
-    transition-property: transform;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition-property: opacity , box-shadow;
     transition-duration: 500ms;
-    :hover{
-        transform: scale(1.15);
-    }
-    
+       
+}
+
+.titre button:hover{
+    opacity: 0.85;
+    box-shadow:0px 4px 15px 0px rgba(0, 0, 0, 0.35); 
 }
 
 .accueil{
@@ -209,6 +211,12 @@ h1{
     padding: 0px;
 }
 
+.like i{
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+
 .like img{
     height: 100%;
 }
@@ -226,12 +234,18 @@ footer {
 
 footer p{
     margin: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 
 footer img{
     color: #ffff;
 }
 
+footer h3{
+    font-family: 'Shrikhand' ,sans-serif;
+}
 .contact{
     text-decoration: none;
     color: white;
