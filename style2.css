@@ -21,10 +21,20 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.text-underline {
+  border-bottom: 2px solid #99E2D0;
+}
+
 .like {
   border: none;
   background-color: transparent;
   font-size: 23px;
+  background-clip: text;
+}
+
+.like:hover {
+  border: none;
+  background-color: #9356dc;
 }
 
 .titre {
@@ -60,16 +70,19 @@ a {
   flex-direction: row;
   justify-content: space-between;
   gap: 5px;
-  width: 100%;
   border-radius: 20px;
+  width: 93%;
   background-color: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  transition: visibility;
-  transition-duration: 200ms;
+  transition: visibility,transform  1s;
 }
 
-.description-commande :active .prix-et-validation .bouton-selection {
-  transition: visibility(visible);
+.description-commande:hover .prix-et-validation {
+  transform: translateX(-60px);
+}
+
+.description-commande:hover .prix-et-validation .bouton-selection img {
+  visibility: visible;
 }
 
 .description {
@@ -95,8 +108,10 @@ a {
 }
 
 .prix-et-validation {
+  position: relative;
   display: flex;
   align-items: flex-end;
+  transition: transform 1s;
 }
 
 .prix-et-validation p {
@@ -105,12 +120,16 @@ a {
 }
 
 .bouton-selection {
+  position: absolute;
+  right: -60px;
   height: 100%;
 }
 
 .bouton-selection img {
   height: 100%;
-  display: none;
+  visibility: hidden;
+  width: 100%;
+  transition: visibility 3s;
 }
 
 .bouton-commande {
@@ -119,14 +138,14 @@ a {
   width: 58%;
   height: 50px;
   border: 0px;
+  margin-bottom: 40px;
   color: white;
-  margin-bottom: 45px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition-property: opacity , box-shadow;
   transition-duration: 500ms;
 }
 
-.bouton-commande {
+.bouton-commande:hover {
   opacity: 0.85;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
