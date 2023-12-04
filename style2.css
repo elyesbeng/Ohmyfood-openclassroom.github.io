@@ -23,13 +23,28 @@ body {
 
 .text-underline {
   border-bottom: 2px solid #99E2D0;
+  height: 35px;
+  width: 49px;
+  position: relative;
 }
 
-.like {
-  border: none;
-  background-color: transparent;
-  font-size: 23px;
+.text-underline h2 {
+  margin: 0px;
+  position: absolute;
+}
+
+.like h1 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  background: linear-gradient(200.64deg, #DCBD56 -5.2%, #FF79DA 110.74%);
   background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background-color 0.2s ease-out;
+  white-space: nowrap;
 }
 
 .like:hover {
@@ -46,6 +61,24 @@ body {
 }
 
 /***MENU***/
+.entrees {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.desserts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -74,7 +107,7 @@ a {
   width: 93%;
   background-color: #ffffff;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  transition: visibility,transform  1s;
+  transition: visibility cubic-bezier(0.81, 0.03, 1, 0.87), transform 1s;
 }
 
 .description-commande:hover .prix-et-validation {
