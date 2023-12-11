@@ -132,7 +132,7 @@ h1 {
   padding: 20px;
 }
 
-.liste-restaurants {
+#liste-restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;

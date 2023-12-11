@@ -10,9 +10,7 @@ header{
     padding: 14px 89px 13px 17px;
     font-family: 'Shrikhand' ,sans-serif;
     gap: 30%;
-    animation-name: apparition;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
+    
     
 }
 
@@ -35,11 +33,6 @@ header{
     
 }
 
-.image-de-fond{
-    animation-name: apparition;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-}
 
 .image-de-fond img{
     width: 100%;
@@ -104,18 +97,21 @@ body{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    animation: apparition 3s;
 }
 
 .plats{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    animation: apparition 4s;
 }
 
 .desserts{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    animation: apparition 5s;
 }
 
 
@@ -130,9 +126,6 @@ body{
     position: relative;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
-    animation-name: apparition;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
 }
 
 a{
@@ -151,17 +144,16 @@ a{
     width: 93%;
     background-color: #ffffff;
     box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
-    transition: opacity cubic-bezier(0.81, 0.03, 1, 0.87) 0.5,transform  1s;
+    transition:transform  1s,;
+    clip-path: border-box;
 
     
 }
 
 .description-commande:hover{
     .prix-et-validation{
-        transform: translateX(-60px) ;
-        .bouton-selection img{
-            opacity: 1;
-        }
+        transform: translateX(-72px) ;  
+        opacity: 1;  
         
     }
 }
@@ -169,6 +161,7 @@ a{
 .description{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 15px;
     gap: 5px;
     max-width: 100%;
@@ -176,9 +169,11 @@ a{
     text-overflow: ellipsis;
     white-space: nowrap;
     box-sizing: border-box;
-    transition: width 1s;
+    transition: transform 1s;
+    clip-path: padding-box;
+    transition: padding-right 1s;
     &:hover{
-     width: -60px;   
+        padding-right: 87px;
     }
     
 }
@@ -222,15 +217,13 @@ a{
 
 .bouton-selection{
     position: absolute;
-    right: -60px;
+    right: -72px;
     height: 100%;
 }
 
 .bouton-selection img{
     height: 100%;
-    opacity: 0;
     width: 100%;
-    transition: opacity 1s cubic-bezier(0.6, 0.03, 0.58, 1);
     
 }
 
@@ -262,9 +255,6 @@ footer {
     background-color: #353535;
     color: white;
     gap: 16px;
-    animation-name: apparition;
-    animation-duration: 8s;
-    animation-iteration-count: 1;
 }
 
 footer h3{
@@ -285,11 +275,11 @@ footer a{
 
 @keyframes apparition{
     0%{
-        opacity: 0;
+        transform: translateX(-50px) ;
     }
 
     100%{
-        opacity: 1;
+        transform: translateX(0);
     }
 
 }
