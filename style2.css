@@ -7,10 +7,14 @@ header {
   display: flex;
   padding: 14px 89px 13px 17px;
   font-family: 'Shrikhand' ,sans-serif;
-  gap: 30%;
 }
 
-.titre-d-entete {
+header a {
+  flex: 0 0 auto;
+}
+
+header .titre-d-entete {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +22,7 @@ header {
   padding-right: 19px;
 }
 
-.titre-d-entete h1 {
+header .titre-d-entete h1 {
   margin: 0px;
 }
 
